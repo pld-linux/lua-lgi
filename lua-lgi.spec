@@ -1,7 +1,7 @@
 Summary:	Lua bindings to GObject libraries
 Name:		lua-lgi
 Version:	0.9.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Libraries
 Source0:	https://github.com/pavouk/lgi/archive/%{version}/lgi-%{version}.tar.gz
@@ -33,7 +33,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	PREFIX=%{_prefix}
+	LUA_LIBDIR=%{_libdir}/lua/5.1 \
+	LUA_SHAREDIR=%{_datadir}/lua/5.1/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
