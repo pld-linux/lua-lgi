@@ -2,7 +2,7 @@ Summary:	Lua bindings to GObject libraries
 Summary(pl.UTF-8):	Wiązania języka Lua do bibliotek GObject
 Name:		lua-lgi
 Version:	0.9.2
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Libraries
 #Source0Download: https://github.com/pavouk/lgi/releases
